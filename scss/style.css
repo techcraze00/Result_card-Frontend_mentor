@@ -207,8 +207,8 @@ body main .summary .button button {
     justify-content: center;
   }
   body main {
-    width: 50%;
-    height: 60%;
+    width: 48%;
+    height: 65%;
     flex-direction: row;
     box-shadow: 10px 25px 25px hsl(221, 100%, 96%);
     border-radius: 30px;
@@ -224,18 +224,16 @@ body main .summary .button button {
     font-size: 20px;
   }
   body main .result-container .score {
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    width: 180px;
+    height: 180px;
     padding: 50px;
   }
   body main .result-container .score p {
     font-size: 70px;
-    line-height: 0.5;
+    line-height: 0.4;
   }
   body main .result-container .phrase {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.5;
   }
   body main .result-container .phrase p {
@@ -245,12 +243,15 @@ body main .summary .button button {
   body main .summary {
     height: 100%;
     width: 50%;
-    padding: 40px;
-    justify-content: space-between;
+    padding: 20px 35px;
+    justify-content: space-around;
     font-size: 16px;
     gap: 0px;
   }
   body main .summary .title p {
     font-size: 25px;
+  }
+  body main .summary .label-container {
+    gap: 12px;
   }
 }/*# sourceMappingURL=style.css.map */
