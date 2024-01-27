@@ -189,14 +189,45 @@ body main .summary .button {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 25px;
 }
 body main .summary .button button {
   width: 100%;
   padding: 15px;
   border-radius: 25px;
+  border: none;
   font-size: 18px;
-  background-color: hsl(224, 30%, 27%);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: none;
   color: hsl(0, 0%, 100%);
+}
+body main .summary .button button:hover {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+body main .summary .button button::before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  left: 50%;
+  border-radius: 25px;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  z-index: -1;
+}
+body main .summary .button button:hover::before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
 }
 
 @media screen and (min-width: 1080px) {
